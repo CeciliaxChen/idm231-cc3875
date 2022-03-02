@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Counter</title>
+</head>
+<body>
+    <h1> Counter </h1>
+    <p class ="js-count-element"> 0 </p>
+    <div role="button"> </div>
+    <button class="js-button-minus"> - </button>
+    <button class="js-button-plus"> + </button> 
+
+
+    <script> 
+    const minusButton = document.querySelector('.js-button-minus');
+    const plusButton = document.querySelector('.js-button-plus');
+    const countContainer = document.querySelector('.js-count-element');
+    
+
+    let count = 0;
+    function increaseValue() {
+        console.log('increase me...');
+        count++; 
+        // at this point of the code, count = 1
+        countContainer.innerHTML = count;
+    }
+    plusButton.addEventListener('click', increaseValue);
+    
+    function decreaseValue() {
+        if (count > 0) {
+            count--; 
+            countContainer.innerHTML = count;
+        }
+        console.log('decrease me...');
+        // at this point of the code, count = -1
+        countContainer.innerHTML = count;
+    }
+    minusButton.addEventListener('click', decreaseValue);
+
+
+    function updateCounter (increase = true) {
+        count++;
+        count--; 
+        countContainer.innerHTML = count;
+    }
+
+
+    function updateCounter (increase = true) {
+        if (increase = true) {
+            count++; 
+        } else {
+            count--; 
+            countContainer.innerHTML = count;
+        }
+    }
+
+
+    plusButton.addEventListener('click', updateCounter, true);
+    minusButton.addEventListener('click', updateCounter, false);
+
+
+    </script>
+</body>
+</html>

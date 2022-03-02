@@ -1,0 +1,14 @@
+.season-text {
+    display: none;
+}
+
+.season-question {
+    font-size: 2rem;
+    background-color: #fff;
+    background-image: linear-gradient(15deg, #f7ada0, #061d41, #311f31);
+    background-size: 30%;
+    -webkit-background-clip: text;
+    -moz-background-clip: text;
+    -webkit-text-fill-color: transparent; 
+    -moz-text-fill-color: transparent;
+}

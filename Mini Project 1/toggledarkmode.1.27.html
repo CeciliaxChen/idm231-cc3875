@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Toggle Dark Mode </title>
+
+<style> 
+    :root {
+        --primary-color: #1e98ff;
+        --base-text-color: black;
+    }
+
+    body{
+        background-color: var(--primary-color);
+        color: var(--base-text-color);
+    }
+    
+    /* .invert{
+        background-color: var(--base-text-color);
+        color: var(--primary-color);  
+    } */
+    
+    </style>
+    
+</head>
+
+<body>
+    
+    <h1> Toggle Dark Mode Example </h1>
+    <button class="js-toggle-class"> Toggle me </button>
+
+    <script> 
+        const buttonElement = document.querySelector('.js-toggle-class');
+
+    // buttonElement.addEventListener('click', function(){
+    // const bodyElement = document.querySelector('body');
+    // bodyElement.classList.toggle('invert');
+
+
+        buttonElement.addEventListener('click', function(){
+            const rootElement = document.querySelector(':root');
+            rootElement.style.setProperty('--primary-color', '#908098');
+
+
+    alert('It works');
+    })
+
+    // Look at YouTube CSS variables 
+
+    </script>
+</body>
+</html>

@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Tip Calculator</title>
+</head>
+<body>
+    <form action = "test.html"> 
+        <label for = "billTotal"> Bill Total </label>
+        <input id = "billTotal" class = "js-bill-total" value = "0.00" type = "number"> 
+        <br> 
+        <label for = "percentage"> Percentage </label>
+        <input id = "percentage" class = "js-bill-total" value = "15" type = "number"> 
+        <button class = "js-submit-button"> Submit </button>
+    </form>
+    <h2> Your Total: $ <span class = "js-yourtotal"> </span>0.00 </h2>
+    <p> You should tip <span> $0.00 </span> </p>
+    <h2> Grant Total <span> $0.00 </span> </h2>
+
+
+    <script>
+        // Get button 
+        const submitButton = document.querySelector('.js-submit-button');
+
+        // Add event listener to button and listen for click 
+        submitButtton.addEventListener('click', function(event) {
+            alert('test');
+            // This will prevent the default behavior 
+            event.preventDefault()
+
+
+
+            // Get value of total 
+            const inputTotal = document.querySelector('.js-bill-total').value;
+
+
+
+            // Get percentage amouunt 
+            const inputPercentage = document.querySelector('.js-percentage-total').value;
+            console.log(inputTotal);
+            console.log(inputPercentage);
+
+
+
+            // Calculate tip math 
+            const tipAmount = (inputPercentage / 100) * inputTotal;
+            // make sure it is 2 decimal places 
+            const formattedTipAmount = tipAmount.toFixed(2);
+
+
+            // Update values on screen 
+
+        })
+
+
+    </script> 
+
+<!-- parseInt rounds decimals to whole numbers 
+     parceFloat would get you 20.20  -->
+
+</body>
+</html>
