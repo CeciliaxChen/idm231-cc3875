@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Homepage </title>
+    <link rel = "normalise" href = "normalise.css">
+    <link rel = "stylesheet" href = "style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Hubballi&family=Montserrat&family=Nunito&family=Roboto:ital@1&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- <img class = "atla_map-bg" src = "zodiacimages/zodiac_atla-bg.jpeg" alt = "bg"> -->
+    <header class = "header"> 
+        <nav class = "header__nav"> 
+            <ul class = "header__nav-list">
+                <li class = "header__nav-list-item"> 
+                    <a class = "header__nav-link" href = "index.html"> ATLA Zodiac </a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <form action = ""> 
+            <label for = "birthdayInput"> ENTER BIRTHDAY </label>
+            <input id = "birthdayInput" class = "js-date-input" type = "date" name = "birthday">
+
+            <button class = "js-submit-button" type = "button"> BOOM </button>
+        </form>
+
+        <p class = "zodiac js-zodiac-text"> </p>
+    </main>
+
+    <script src = "app.js"></script>
+</body>
+</html>

@@ -1,0 +1,54 @@
+/* normalising */
+*{
+    box-sizing: border-box;
+    box-sizing: 0;
+    margin: 0;
+    padding: 0;
+}
+
+/* font */
+@font-face {
+    font-display: swap;
+    font-family: 'Hubballi', sans-serif;
+    font-style: normal;
+    font-weight: normal;
+    src: url('Herculanum-font.ttf') format('truetype');
+}
+  
+.header__nav-link {
+    color: white;
+    font-family: 'Hubballi';
+    font-size: 4rem;
+    text-decoration: none;
+}
+
+.header__nav {
+    display: flex;
+    justify-content: center;
+    padding: 1.8rem 20rem;
+}
+
+body {
+    background-image: url("zodiacimages/zodiac_atla-bg.jpeg");
+    background-size: cover;
+}
+
+form {
+    display: flex;
+    justify-content: center;
+}
+
+label {
+    font-family: 'Hubballi';
+    font-size: 2rem;
+    padding: 0 1rem;
+}
+
+input {
+    padding: 0 1rem;
+    border-radius: .3rem;
+}
+
+button {
+    border-radius: .5rem;
+}
