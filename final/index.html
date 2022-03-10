@@ -17,18 +17,73 @@
                 <li class = "header__nav-list-item"> 
                     <a class = "header__nav-link" href = "index.html"> ATLA Zodiac </a>
                 </li>
+                <li class = "header__nav-list-item">
+                    <a class = "header__nav-link" href = "help.html"> Need Help? </a>
+                </li>
             </ul>
         </nav>
     </header>
     <main>
-        <form action = ""> 
-            <label for = "birthdayInput"> ENTER BIRTHDAY </label>
-            <input id = "birthdayInput" class = "js-date-input" type = "date" name = "birthday">
+        <div class = "wrapper">
+            <form action = ""> 
+                <label for = "birthdayInput"> ENTER BIRTHDAY </label>
+                <input id = "birthdayInput" class = "js-date-input" type = "date" name = "birthday">
 
-            <button class = "js-submit-button" type = "button"> BOOM </button>
-        </form>
+                <button class = "js-submit-button" type = "button"> BOOM </button>
+            </form>
 
-        <p class = "zodiac js-zodiac-text"> </p>
+            <p class = "zodiac js-zodiac-text"> </p>
+
+            <audio class = "sounds js-audio">
+                <source class = "js-ogg" src = "sounds/aang-sound.ogg" type = "audio/ogg">
+                <source class = "js-mp3" src = "sounds/aang-sound.mp3" type = "audio/mpeg">
+            </audio>
+            
+            <div class = "character_card">
+                <img class = "character_card_img" src = "zodiacimages/air-aang-01.png"> 
+                <p class = "character_card_bio">You are Aang!</p>
+            </div>
+
+            <div class = "character_gallery"> 
+                <div class = "character_img">
+                    <img class = "character_img__image" src = "zodiacimages/air-aang-01.png"> 
+                </div>
+                <div class = "character_img">
+                    <img class = "character_img__image" src = "zodiacimages/air-momo-02.png"> 
+                </div>
+                <div class = "character_img">
+                    <img class = "character_img__image" src = "zodiacimages/air-appa-03.png"> 
+                </div>
+                <div class = "character_img">
+                    <img class = "character_img__image" src = "zodiacimages/air-aang-01.png"> 
+                </div>
+                <div class = "character_img">
+                    <img class = "character_img__image" src = "zodiacimages/air-aang-01.png"> 
+                </div>
+                <div class = "character_img">
+                    <img class = "character_img__image" src = "zodiacimages/air-aang-01.png"> 
+                </div>
+                <div class = "character_img">
+                    <img class = "character_img__image" src = "zodiacimages/air-aang-01.png"> 
+                </div>
+                <div class = "character_img">
+                    <img class = "character_img__image" src = "zodiacimages/air-aang-01.png"> 
+                </div>
+                <div class = "character_img">
+                    <img class = "character_img__image" src = "zodiacimages/air-aang-01.png"> 
+                </div>
+                <div class = "character_img">
+                    <img class = "character_img__image" src = "zodiacimages/air-aang-01.png"> 
+                </div>
+                <div class = "character_img">
+                    <img class = "character_img__image" src = "zodiacimages/air-aang-01.png"> 
+                </div>
+                <div class = "character_img">
+                    <img class = "character_img__image" src = "zodiacimages/air-aang-01.png"> 
+                </div>
+            </div>
+
+        </div>
     </main>
 
     <script src = "app.js"></script>

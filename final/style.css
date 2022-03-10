@@ -14,12 +14,18 @@
     font-weight: normal;
     src: url('Herculanum-font.ttf') format('truetype');
 }
-  
+
+/* header */
 .header__nav-link {
     color: white;
     font-family: 'Hubballi';
     font-size: 4rem;
     text-decoration: none;
+    list-style-type: none;
+}
+
+ul {
+    list-style-type: none;
 }
 
 .header__nav {
@@ -36,6 +42,7 @@ body {
 form {
     display: flex;
     justify-content: center;
+    margin-bottom: 4rem;
 }
 
 label {
@@ -52,3 +59,101 @@ input {
 button {
     border-radius: .5rem;
 }
+
+.wrapper{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-items: space-between;
+    margin: 2rem;
+}
+
+.help_card {
+    background-color: white;
+    box-shadow: 2rem;
+    font-family: 'Hubballi';
+    font-size: 2rem;
+    padding: 4rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    max-width: 900px;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+.help_title {
+    font-size: 2.5rem;
+    line-height: 1.5rem;
+}
+
+.help_description {
+    font-size: 1.5rem;
+    line-height: 1.5rem;
+    text-align: center;
+}
+
+/* character */
+.character_gallery {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+}
+
+.character_img{
+    max-width: 150px;
+}
+
+.character_img__image{
+    max-width: 100%;
+}
+
+.character_card{
+    display: none;
+}
+
+.character_card {
+    background-color: white;
+    box-shadow: 2rem;
+    display: none;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.character_card_img {
+    max-width: 60%;
+}
+
+
+/* Aries (March 21 - April 19) (fire) (ZUKO)
+Taurus (April 20 - May 20) (earth) (TOPH)
+Gemini (May 21 - June 20) (air) (MOMO)
+Cancer (June 21 - July 22) (water) (SOKKA)
+Leo (July 23 - August 22) (fire) (MAKO)
+Virgo (August 23 - September 22) (earth) (BOLIN)
+Libra (September 23 - October 22) (air) (AANG)
+Scorpio (October 23 - November 21) (water) (PAKKU)
+Sagittarius (November 22 - December 21) (fire) (IROH)
+Capricorn (December 22 - January 19) (earth) (KIYOSHI)
+Aquarius (January 20 - February 18) (air) (APPA)
+Pisces (February 19 - March 20) (water) (KATARA)*/ 
+
+
+/* 
+Aang (libra)
+Momo
+Appa
+
+Iroh
+Zuko
+Mako
+
+Pakku
+Katara
+Sokka
+
+Bolin
+Kiyoshi
+Toph */
