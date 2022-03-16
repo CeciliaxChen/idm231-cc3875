@@ -22,6 +22,7 @@
     font-size: 4rem;
     text-decoration: none;
     list-style-type: none;
+    text-align: center;
 }
 
 ul {
@@ -30,9 +31,17 @@ ul {
 
 .header__nav {
     display: flex;
+    padding: 1rem 1.5rem;
+    width: 100%;
     justify-content: center;
-    padding: 1.8rem 20rem;
 }
+
+.boomerang_q {
+    max-width: 64px;
+    margin: 1rem 0 0 1rem;
+}
+
+
 
 body {
     background-image: url("zodiacimages/zodiac_atla-bg.jpeg");
@@ -67,6 +76,7 @@ button {
     justify-items: space-between;
     margin: 2rem;
 }
+
 
 .help_card {
     background-color: white;
@@ -109,11 +119,9 @@ button {
     max-width: 100%;
 }
 
-.character_card{
-    display: none;
-}
 
 .character_card {
+    position: absolute;
     background-color: white;
     box-shadow: 2rem;
     display: none;

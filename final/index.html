@@ -5,87 +5,87 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title> Homepage </title>
-    <link rel = "normalise" href = "normalise.css">
-    <link rel = "stylesheet" href = "style.css">
+    <link rel="normalise" href="normalise.css">
+    <link rel="stylesheet" href="style.css">
     <link href="https://fonts.googleapis.com/css2?family=Hubballi&family=Montserrat&family=Nunito&family=Roboto:ital@1&display=swap" rel="stylesheet">
 </head>
 <body>
-    <!-- <img class = "atla_map-bg" src = "zodiacimages/zodiac_atla-bg.jpeg" alt = "bg"> -->
-    <header class = "header"> 
-        <nav class = "header__nav"> 
-            <ul class = "header__nav-list">
-                <li class = "header__nav-list-item"> 
-                    <a class = "header__nav-link" href = "index.html"> ATLA Zodiac </a>
-                </li>
-                <li class = "header__nav-list-item">
-                    <a class = "header__nav-link" href = "help.html"> Need Help? </a>
+    <!-- <img class="atla_map-bg" src="zodiacimages/zodiac_atla-bg.jpeg" alt="bg"> -->
+    <header class="header"> 
+        <div class="need_help"> 
+            <img class="boomerang_q" src="zodiacimages/boomerang-2-13.png"> 
+        </div>
+        <nav class="header__nav"> 
+            <ul class="header__nav-list">
+                <li class="header__nav-list-item"> 
+                    <a class="header__nav-link" href="index.html"> ATLA Zodiac </a>
                 </li>
             </ul>
         </nav>
-    </header>
+    </header> 
     <main>
-        <div class = "wrapper">
-            <form action = ""> 
-                <label for = "birthdayInput"> ENTER BIRTHDAY </label>
-                <input id = "birthdayInput" class = "js-date-input" type = "date" name = "birthday">
+        <div class="wrapper">
+            <form action=""> 
+                <label for="birthdayInput"> ENTER BIRTHDAY </label>
+                <input id="birthdayInput" class="js-date-input" type="date" name="birthday">
 
-                <button class = "js-submit-button" type = "button"> BOOM </button>
+                <button class="js-submit-button" type="button"> BOOM </button>
             </form>
 
-            <p class = "zodiac js-zodiac-text"> </p>
+            <p class="zodiac js-zodiac-text"> </p>
 
-            <audio class = "sounds js-audio">
-                <source class = "js-ogg" src = "sounds/aang-sound.ogg" type = "audio/ogg">
-                <source class = "js-mp3" src = "sounds/aang-sound.mp3" type = "audio/mpeg">
+            <audio class="sounds js-audio">
+                <source class="js-ogg" src="sounds/aang-sound.ogg" type="audio/ogg">
+                <source class="js-mp3" src="sounds/aang-sound.mp3" type="audio/mpeg">
             </audio>
             
-            <div class = "character_card">
-                <img class = "character_card_img" src = "zodiacimages/air-aang-01.png"> 
-                <p class = "character_card_bio">You are Aang!</p>
+            <div class="character_card">
+                <img class="character_card_img" src="zodiacimages/air-aang-01.png"> 
+                <p class="character_card_bio">You are Aang!</p>
             </div>
 
-            <div class = "character_gallery"> 
-                <div class = "character_img">
-                    <img class = "character_img__image" src = "zodiacimages/air-aang-01.png"> 
-                </div>
-                <div class = "character_img">
-                    <img class = "character_img__image" src = "zodiacimages/air-momo-02.png"> 
-                </div>
-                <div class = "character_img">
-                    <img class = "character_img__image" src = "zodiacimages/air-appa-03.png"> 
-                </div>
-                <div class = "character_img">
-                    <img class = "character_img__image" src = "zodiacimages/air-aang-01.png"> 
-                </div>
-                <div class = "character_img">
-                    <img class = "character_img__image" src = "zodiacimages/air-aang-01.png"> 
-                </div>
-                <div class = "character_img">
-                    <img class = "character_img__image" src = "zodiacimages/air-aang-01.png"> 
-                </div>
-                <div class = "character_img">
-                    <img class = "character_img__image" src = "zodiacimages/air-aang-01.png"> 
-                </div>
-                <div class = "character_img">
-                    <img class = "character_img__image" src = "zodiacimages/air-aang-01.png"> 
-                </div>
-                <div class = "character_img">
-                    <img class = "character_img__image" src = "zodiacimages/air-aang-01.png"> 
-                </div>
-                <div class = "character_img">
-                    <img class = "character_img__image" src = "zodiacimages/air-aang-01.png"> 
-                </div>
-                <div class = "character_img">
-                    <img class = "character_img__image" src = "zodiacimages/air-aang-01.png"> 
-                </div>
-                <div class = "character_img">
-                    <img class = "character_img__image" src = "zodiacimages/air-aang-01.png"> 
-                </div>
+            <div class="character_gallery"> 
+                <button class="character_img js-chara-button" data-character="zuko">
+                    <img class="character_img__image" src="zodiacimages/zuko-fire-08.png" > 
+                </button>
+                <button class="character_img js-chara-button" data-character="toph" >
+                    <img class="character_img__image" src="zodiacimages/toph-earth-12.png"> 
+                </button>
+                <button class="character_img js-chara-button" data-character="momo">
+                    <img class="character_img__image" src="zodiacimages/air-momo-02.png"> 
+                </button>
+                <button class="character_img js-chara-button" data-character="sokka">
+                    <img class="character_img__image" src="zodiacimages/sokka-water-06.png"> 
+                </button>
+                <button class="character_img js-chara-button" data-character="mako">
+                    <img class="character_img__image" src="zodiacimages/mako-fire-09.png"> 
+                </button>
+                <button class="character_img js-chara-button" data-character="bolin">
+                    <img class="character_img__image" src="zodiacimages/bolin-earth-10.png"> 
+                </button>
+                <button class="character_img js-chara-button" data-character="aang">
+                    <img class="character_img__image" src="zodiacimages/air-aang-01.png"> 
+                </button>
+                <button class="character_img js-chara-button" data-character="pakku">
+                    <img class="character_img__image" src="zodiacimages/pakku-water-04.png"> 
+                </button>
+                <button class="character_img js-chara-button" data-character="iroh">
+                    <img class="character_img__image" src="zodiacimages/iroh-fire-07.png"> 
+                </button>
+                <button class="character_img js-chara-button" data-character="kiyoshi">
+                    <img class="character_img__image" src="zodiacimages/kiyoshi-earth-11.png"> 
+                </button>
+                <button class="character_img js-chara-button" data-character="aang">
+                    <img class="character_img__image" src="zodiacimages/air-appa-03.png"> 
+                </button>
+                <button class="character_img js-chara-button" data-character="katara">
+                    <img class="character_img__image" src="zodiacimages/katara-water-05.png"> 
+                </button>
             </div>
 
         </div>
     </main>
 
-    <script src = "app.js"></script>
+    <script src="app.js"></script>
 </body>
 </html>
