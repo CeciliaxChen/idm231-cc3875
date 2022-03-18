@@ -12,9 +12,9 @@
 <body>
     <!-- <img class="atla_map-bg" src="zodiacimages/zodiac_atla-bg.jpeg" alt="bg"> -->
     <header class="header"> 
-        <div class="need_help"> 
-            <img class="boomerang_q" src="zodiacimages/boomerang-2-13.png"> 
-        </div>
+        <button class="need_help js-help-button-open"> 
+            <a class="help-link" href="help.html"> <img class="boomerang_q" src="zodiacimages/boomerang-2-13.png" alt="help_button"></a>
+        </button>
         <nav class="header__nav"> 
             <ul class="header__nav-list">
                 <li class="header__nav-list-item"> 
@@ -32,6 +32,7 @@
                 <button class="js-submit-button" type="button"> BOOM </button>
             </form>
 
+
             <p class="zodiac js-zodiac-text"> </p>
 
             <audio class="sounds js-audio">
@@ -41,48 +42,47 @@
             
             <div class="character_card">
                 <img class="character_card_img" src="zodiacimages/air-aang-01.png"> 
-                <p class="character_card_bio">You are Aang!</p>
+                <p class="character_card_bio js-charaBio"></p>
             </div>
 
-            <div class="character_gallery"> 
+            <div class="character_gallery js-chara-gallery"> 
                 <button class="character_img js-chara-button" data-character="zuko">
-                    <img class="character_img__image" src="zodiacimages/zuko-fire-08.png" > 
+                    <img class="character_img__image" src="zodiacimages/zuko-fire-08.png" alt="zuko"> 
                 </button>
                 <button class="character_img js-chara-button" data-character="toph" >
-                    <img class="character_img__image" src="zodiacimages/toph-earth-12.png"> 
+                    <img class="character_img__image" src="zodiacimages/toph-earth-12.png" alt="toph"> 
                 </button>
                 <button class="character_img js-chara-button" data-character="momo">
-                    <img class="character_img__image" src="zodiacimages/air-momo-02.png"> 
+                    <img class="character_img__image" src="zodiacimages/air-momo-02.png" alt="momo"> 
                 </button>
                 <button class="character_img js-chara-button" data-character="sokka">
-                    <img class="character_img__image" src="zodiacimages/sokka-water-06.png"> 
+                    <img class="character_img__image" src="zodiacimages/sokka-water-06.png" alt="sokka"> 
                 </button>
                 <button class="character_img js-chara-button" data-character="mako">
-                    <img class="character_img__image" src="zodiacimages/mako-fire-09.png"> 
+                    <img class="character_img__image" src="zodiacimages/mako-fire-09.png" alt="mako"> 
                 </button>
                 <button class="character_img js-chara-button" data-character="bolin">
-                    <img class="character_img__image" src="zodiacimages/bolin-earth-10.png"> 
+                    <img class="character_img__image" src="zodiacimages/bolin-earth-10.png" alt="bolin"> 
                 </button>
                 <button class="character_img js-chara-button" data-character="aang">
-                    <img class="character_img__image" src="zodiacimages/air-aang-01.png"> 
+                    <img class="character_img__image" src="zodiacimages/air-aang-01.png" alt="aang"> 
                 </button>
                 <button class="character_img js-chara-button" data-character="pakku">
-                    <img class="character_img__image" src="zodiacimages/pakku-water-04.png"> 
+                    <img class="character_img__image" src="zodiacimages/pakku-water-04.png" alt="pakku"> 
                 </button>
                 <button class="character_img js-chara-button" data-character="iroh">
-                    <img class="character_img__image" src="zodiacimages/iroh-fire-07.png"> 
+                    <img class="character_img__image" src="zodiacimages/iroh-fire-07.png" alt="iroh"> 
                 </button>
                 <button class="character_img js-chara-button" data-character="kiyoshi">
-                    <img class="character_img__image" src="zodiacimages/kiyoshi-earth-11.png"> 
+                    <img class="character_img__image" src="zodiacimages/kiyoshi-earth-11.png" alt="kiyoshi"> 
                 </button>
-                <button class="character_img js-chara-button" data-character="aang">
-                    <img class="character_img__image" src="zodiacimages/air-appa-03.png"> 
+                <button class="character_img js-chara-button" data-character="appa">
+                    <img class="character_img__image" src="zodiacimages/air-appa-03.png" alt="appa"> 
                 </button>
                 <button class="character_img js-chara-button" data-character="katara">
-                    <img class="character_img__image" src="zodiacimages/katara-water-05.png"> 
+                    <img class="character_img__image" src="zodiacimages/katara-water-05.png" alt="katara"> 
                 </button>
             </div>
-
         </div>
     </main>
 
